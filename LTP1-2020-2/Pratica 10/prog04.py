@@ -19,9 +19,10 @@ def subtrair(numero1, numero2):
   return numero1-numero2
 
 #Programa principal
-
+import os
 continuar = True
 while continuar == True:
+  os.system("clear") #No windows - cls
   exibir_menu()
   opcao = int(input("Opcao:"))
   if opcao == 1:
@@ -34,3 +35,6 @@ while continuar == True:
     print("Resultado:", subtrair(n1,n2))
   elif opcao == 0:
     continuar = False
+  else:
+    print("Opcao Invalida!")
+  input("Pressione enter para continuar")
